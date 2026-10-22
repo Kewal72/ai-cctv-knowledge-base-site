@@ -1,0 +1,2373 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Our team's guide to understanding, installing and selling AI CCTV.">
+      
+      
+      
+        <link rel="canonical" href="https://kewal72.github.io/ai-cctv-knowledge-base-site/installation/ai-upgrade-playbook.html">
+      
+      
+        <link rel="prev" href="testing-a-demo-setup.html">
+      
+      
+        <link rel="next" href="../troubleshooting/index.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>AI upgrade playbook (Step 1) - AI CCTV Knowledge Base</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+        <script src="https://unpkg.com/iframe-worker/shim"></script>
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai-upgrade-playbook-step-1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="AI CCTV Knowledge Base" class="md-header__button md-logo" aria-label="AI CCTV Knowledge Base" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AI CCTV Knowledge Base
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AI upgrade playbook (Step 1)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="AI CCTV Knowledge Base" class="md-nav__button md-logo" aria-label="AI CCTV Knowledge Base" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AI CCTV Knowledge Base
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../fundamentals/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI CCTV Fundamentals
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI CCTV Fundamentals
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fundamentals/what-makes-a-camera-ai.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    What makes a camera AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fundamentals/how-ai-detects-people-and-vehicles.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How AI detects people and vehicles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fundamentals/where-ai-runs.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Where the AI runs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../features/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI Features
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    AI Features
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/intrusion-line-crossing-loitering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Intrusion, line-crossing and loitering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/face-recognition.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Face recognition
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/anpr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Number-plate reading (ANPR)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/people-counting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    People counting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../features/smart-search.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart search
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation and Setup
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Installation and Setup
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="adding-ai-to-existing-cameras.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Adding AI to existing cameras
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="camera-placement-for-ai.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Camera placement for AI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="testing-a-demo-setup.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Testing a demo setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI upgrade playbook (Step 1)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="ai-upgrade-playbook.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI upgrade playbook (Step 1)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-one-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In one line
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-step-1-includes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Step 1 includes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-it-matters-to-the-customer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why it matters to the customer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-golden-rule-recorder-first-ai-cameras-only-where-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The golden rule: recorder first, AI cameras only where needed
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-a-choose-the-recorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step A: Choose the recorder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-b-decide-camera-by-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step B: Decide camera by camera
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step B: Decide camera by camera">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#where-to-put-an-ai-camera-with-siren-and-light" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where to put an AI camera (with siren and light)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-an-existing-camera-must-be-replaced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When an existing camera must be replaced
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keep-the-existing-camera-when" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keep the existing camera when
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-c-pick-the-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step C: Pick the package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-full-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The full process
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The full process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-find-leads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Find leads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-site-survey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Site survey
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-decide-and-quote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Decide and quote
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Order
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-install-and-set-up-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Install and set up AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-test-and-2-week-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Test and 2-week tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-handover-and-amc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Handover and AMC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-explain-it-to-a-customer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to explain it to a customer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related pages
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../troubleshooting/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Troubleshooting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/ai-failures-and-fixes.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Why AI fails, and how to fix it
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../products/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Products and Brands
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Products and Brands
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/ai-product-lines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI product lines by brand
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../products/reading-a-spec-sheet.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reading a spec sheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../sales/index.html" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sales and Customers
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sales and Customers
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sales/use-cases-by-customer-type.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI use cases by customer type
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sales/pricing-packages-amc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Pricing, packages and AMC
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sales/handling-objections.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Handling customer objections
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#in-one-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        In one line
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-step-1-includes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Step 1 includes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-it-matters-to-the-customer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Why it matters to the customer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-golden-rule-recorder-first-ai-cameras-only-where-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The golden rule: recorder first, AI cameras only where needed
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-a-choose-the-recorder" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step A: Choose the recorder
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-b-decide-camera-by-camera" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step B: Decide camera by camera
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step B: Decide camera by camera">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#where-to-put-an-ai-camera-with-siren-and-light" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Where to put an AI camera (with siren and light)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-an-existing-camera-must-be-replaced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When an existing camera must be replaced
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keep-the-existing-camera-when" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Keep the existing camera when
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-c-pick-the-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step C: Pick the package
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-full-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The full process
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="The full process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-find-leads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Find leads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-site-survey" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Site survey
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-decide-and-quote" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Decide and quote
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Order
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-install-and-set-up-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Install and set up AI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-test-and-2-week-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Test and 2-week tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-handover-and-amc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Handover and AMC
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#common-mistakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common mistakes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-explain-it-to-a-customer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to explain it to a customer
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-pages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related pages
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ai-upgrade-playbook-step-1">AI upgrade playbook (Step 1)<a class="headerlink" href="#ai-upgrade-playbook-step-1" title="Permanent link">&para;</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Draft</p>
+<p>Last updated: 2026-10-22</p>
+</div>
+<h2 id="in-one-line">In one line<a class="headerlink" href="#in-one-line" title="Permanent link">&para;</a></h2>
+<p>For a customer who already has cameras: upgrade the recorder to an AI <abbr title="A hybrid recorder for analog cameras and some IP cameras; many now include AI">XVR</abbr> or AI <abbr title="Network Video Recorder: records video from IP cameras">NVR</abbr> so every good camera gets AI, and add AI cameras with siren and light only at the few spots that need them.</p>
+<blockquote>
+<p><strong>Pitch:</strong> "Keep your cameras. Upgrade the brain. Add a guard at the weak spots."</p>
+</blockquote>
+<h2 id="what-step-1-includes">What Step 1 includes<a class="headerlink" href="#what-step-1-includes" title="Permanent link">&para;</a></h2>
+<p>Step 1 is what we sell first: simple, reliable, and easy to demo.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Person/vehicle detection</td>
+<td>Alerts only for people and vehicles, not trees, dogs or rain</td>
+</tr>
+<tr>
+<td>Intrusion</td>
+<td>Alert when someone enters a zone (yard, rooftop, store room)</td>
+</tr>
+<tr>
+<td>Line-crossing</td>
+<td>Alert when someone crosses a line (top of a wall, a gate after closing)</td>
+</tr>
+<tr>
+<td>Loitering</td>
+<td>Alert when someone stays too long (shopfront at night, back lane)</td>
+</tr>
+<tr>
+<td>Siren + light</td>
+<td>Scares the intruder away while it's happening</td>
+</tr>
+</tbody>
+</table>
+<h2 id="why-it-matters-to-the-customer">Why it matters to the customer<a class="headerlink" href="#why-it-matters-to-the-customer" title="Permanent link">&para;</a></h2>
+<p>They get alerts they can trust, at a fraction of the cost of a new system, without throwing away cameras that work.</p>
+<h2 id="the-golden-rule-recorder-first-ai-cameras-only-where-needed">The golden rule: recorder first, AI cameras only where needed<a class="headerlink" href="#the-golden-rule-recorder-first-ai-cameras-only-where-needed" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Upgrade the recorder (AI <abbr title="A hybrid recorder for analog cameras and some IP cameras; many now include AI">XVR</abbr> / AI <abbr title="Network Video Recorder: records video from IP cameras">NVR</abbr>)</th>
+<th>Add or replace with an AI camera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>What it does</td>
+<td>Adds AI to the cameras the customer already has</td>
+<td>Gives AI + siren and light at one spot</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>Lowest: one box for many cameras</td>
+<td>Higher per spot</td>
+</tr>
+<tr>
+<td>Use it for</td>
+<td><strong>Every site with working cameras</strong></td>
+<td><strong>Only the weak or high-risk spots</strong> (see below)</td>
+</tr>
+<tr>
+<td>Like…</td>
+<td>One smart supervisor watching all the screens</td>
+<td>A trained guard with a whistle and torch at the back gate</td>
+</tr>
+</tbody>
+</table>
+<h2 id="step-a-choose-the-recorder">Step A: Choose the recorder<a class="headerlink" href="#step-a-choose-the-recorder" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart TD
+    Q1{"Existing cameras:&lt;br/&gt;analog or IP?"}
+    Q1 -- Analog --&gt; X["Replace DVR with&lt;br/&gt;AI XVR"]
+    Q1 -- IP --&gt; Q2{"Cameras the same brand&lt;br/&gt;as the new AI NVR?"}
+    Q2 -- Yes --&gt; N["Replace NVR with&lt;br/&gt;AI NVR"]
+    Q2 -- "No / mixed" --&gt; T["Test ONVIF first.&lt;br/&gt;If AI doesn't work: AI box&lt;br/&gt;or AI cameras at key spots"]</code></pre>
+<p><strong>How to tell analog from IP:</strong> analog uses round coaxial cable and a <abbr title="Digital Video Recorder: records video from analog cameras">DVR</abbr>/<abbr title="A hybrid recorder for analog cameras and some IP cameras; many now include AI">XVR</abbr>; IP uses LAN cable and an <abbr title="Network Video Recorder: records video from IP cameras">NVR</abbr>. See <a href="adding-ai-to-existing-cameras.html">Adding AI to existing cameras</a>.</p>
+<p><strong>Check the AI channel count.</strong> A recorder spec like "AI: 4-ch" means only 4 cameras get AI. Count how many cameras need AI and buy a recorder that covers them.</p>
+<h2 id="step-b-decide-camera-by-camera">Step B: Decide camera by camera<a class="headerlink" href="#step-b-decide-camera-by-camera" title="Permanent link">&para;</a></h2>
+<p>Go to each camera and ask these questions in order:</p>
+<pre class="mermaid"><code>flowchart TD
+    Q1{"Clear image day AND night?&lt;br/&gt;Person big enough?"}
+    Q1 -- No --&gt; R["Replace with&lt;br/&gt;AI camera"]
+    Q1 -- Yes --&gt; Q2{"High-risk spot where&lt;br/&gt;a siren would help?"}
+    Q2 -- Yes --&gt; D["Replace with AI camera&lt;br/&gt;with siren + light"]
+    Q2 -- No --&gt; K["Keep it. The AI&lt;br/&gt;recorder adds AI"]</code></pre>
+<h3 id="where-to-put-an-ai-camera-with-siren-and-light">Where to put an AI camera (with siren and light)<a class="headerlink" href="#where-to-put-an-ai-camera-with-siren-and-light" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Spot</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Boundary walls and back walls</td>
+<td>Thieves climb here. Line-crossing + siren stops them before they're inside</td>
+</tr>
+<tr>
+<td>Main gate after closing</td>
+<td>First point of entry</td>
+</tr>
+<tr>
+<td>Godown / warehouse shutters and doors</td>
+<td>Where goods are stolen from</td>
+</tr>
+<tr>
+<td>Back lanes and side passages</td>
+<td>Dark, hidden, nobody watching</td>
+</tr>
+<tr>
+<td>Rooftops and terraces</td>
+<td>A common way in that owners forget</td>
+</tr>
+<tr>
+<td>Shopfront at night</td>
+<td>Loitering + siren before the shutter is broken</td>
+</tr>
+</tbody>
+</table>
+<h3 id="when-an-existing-camera-must-be-replaced">When an existing camera must be replaced<a class="headerlink" href="#when-an-existing-camera-must-be-replaced" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Problem found in the survey</th>
+<th>Why the AI recorder can't fix it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Night vision (<abbr title="Infrared: invisible light used for night vision">IR</abbr>) dead or weak</td>
+<td>AI can't detect what the camera can't see</td>
+</tr>
+<tr>
+<td>Very old, low-resolution, blurry</td>
+<td>People look like blobs; AI misses them</td>
+</tr>
+<tr>
+<td>Too far: person is tiny on screen</td>
+<td>Below the <abbr title="Detect, Observe, Recognise, Identify: how much detail a camera captures at a distance">DORI</abbr> "detect" level</td>
+</tr>
+<tr>
+<td>One wide camera covering a long wall</td>
+<td>Far end is too small and outside <abbr title="Infrared: invisible light used for night vision">IR</abbr> range. Use 2 cameras</td>
+</tr>
+<tr>
+<td>Mixed brand and <abbr title="A common &quot;language&quot; that lets cameras and recorders from different brands work together">ONVIF</abbr> test failed</td>
+<td>Recording works but AI doesn't</td>
+</tr>
+<tr>
+<td>Mounted too high, looking straight down</td>
+<td>AI sees only heads. Lower to about 2.5–4 m</td>
+</tr>
+</tbody>
+</table>
+<h3 id="keep-the-existing-camera-when">Keep the existing camera when<a class="headerlink" href="#keep-the-existing-camera-when" title="Permanent link">&para;</a></h3>
+<ul>
+<li>The image is clear, day and night.</li>
+<li>A person at the far end of the area still looks clearly like a person.</li>
+<li>It's an indoor or low-risk spot (billing counter, office, corridor) where a siren isn't needed.</li>
+</ul>
+<h2 id="step-c-pick-the-package">Step C: Pick the package<a class="headerlink" href="#step-c-pick-the-package" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Package</th>
+<th>What's included</th>
+<th>Good for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Basic</strong></td>
+<td>AI <abbr title="A hybrid recorder for analog cameras and some IP cameras; many now include AI">XVR</abbr>/<abbr title="Network Video Recorder: records video from IP cameras">NVR</abbr> only, keep all cameras</td>
+<td>Tight budget, all cameras in good condition</td>
+</tr>
+<tr>
+<td><strong>Standard (recommended)</strong></td>
+<td>AI <abbr title="A hybrid recorder for analog cameras and some IP cameras; many now include AI">XVR</abbr>/<abbr title="Network Video Recorder: records video from IP cameras">NVR</abbr> + replace poor cameras + 2 AI cameras with siren and light at the riskiest spots</td>
+<td>Most warehouses, godowns, shops, factories</td>
+</tr>
+<tr>
+<td><strong>Premium</strong></td>
+<td>Standard + 4 siren cameras + more coverage</td>
+<td>Large sites, high-value goods</td>
+</tr>
+</tbody>
+</table>
+<p>Add <abbr title="Annual Maintenance Contract: a yearly service fee for maintenance and support">AMC</abbr> to every package. See <a href="../sales/pricing-packages-amc.html">Pricing, packages and <abbr title="Annual Maintenance Contract: a yearly service fee for maintenance and support">AMC</abbr></a>.</p>
+<h2 id="the-full-process">The full process<a class="headerlink" href="#the-full-process" title="Permanent link">&para;</a></h2>
+<pre class="mermaid"><code>flowchart LR
+    A[1. Find lead] --&gt; B[2. Site survey]
+    B --&gt; C[3. Decide + quote]
+    C --&gt; D[4. Order]
+    D --&gt; E[5. Install + set up AI]
+    E --&gt; F[6. Test + 2-week tuning]
+    F --&gt; G[7. Handover + AMC]</code></pre>
+<h3 id="1-find-leads">1. Find leads<a class="headerlink" href="#1-find-leads" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Start with <strong>past customers</strong>: they already trust us.</li>
+<li>Offer a free <strong>"AI upgrade check"</strong> (site survey).</li>
+<li>Then warehouses, godowns, factories and shops in our area.</li>
+</ul>
+<h3 id="2-site-survey">2. Site survey<a class="headerlink" href="#2-site-survey" title="Permanent link">&para;</a></h3>
+<p>Visit once in the day and look at the recorder's night footage. Fill in one row per camera:</p>
+<table>
+<thead>
+<tr>
+<th>Cam</th>
+<th>Location</th>
+<th>Analog / IP</th>
+<th>Brand</th>
+<th>Day image</th>
+<th>Night image</th>
+<th>Risk spot?</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Main gate</td>
+<td>Analog</td>
+<td></td>
+<td>Good</td>
+<td>Good</td>
+<td>Yes</td>
+<td>AI camera + siren</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Back wall</td>
+<td>Analog</td>
+<td></td>
+<td>Good</td>
+<td><abbr title="Infrared: invisible light used for night vision">IR</abbr> dead</td>
+<td>Yes</td>
+<td>Replace: AI camera + siren</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Billing counter</td>
+<td>Analog</td>
+<td></td>
+<td>Good</td>
+<td>Good</td>
+<td>No</td>
+<td>Keep</td>
+</tr>
+</tbody>
+</table>
+<p>Also note:</p>
+<ul>
+<li>[ ] Recorder type, brand, age; number of channels</li>
+<li>[ ] Hard disk health and recording days</li>
+<li>[ ] Internet at the site (needed for phone alerts)</li>
+<li>[ ] <abbr title="Uninterruptible Power Supply: battery backup during power cuts">UPS</abbr> for recorder, router and switch</li>
+<li>[ ] What the customer actually wants: night theft, wall climbing, shopfront</li>
+</ul>
+<h3 id="3-decide-and-quote">3. Decide and quote<a class="headerlink" href="#3-decide-and-quote" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Use Step A and Step B above to fill the "Decision" column.</li>
+<li>Make 3 packages; mark Standard "Recommended".</li>
+<li>Show the payback: a guard's salary or one theft vs the system price.</li>
+</ul>
+<h3 id="4-order">4. Order<a class="headerlink" href="#4-order" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Buy <strong><abbr title="India's government security testing and certification for CCTV cameras">STQC</abbr>-certified</strong> models only (India's CCTV security certification) <strong>(to verify with distributor)</strong>.</li>
+<li>Recorder and AI cameras from the <strong>same brand</strong>, so all AI features work.</li>
+<li>Check the spec sheet: "human/vehicle classification" or "deep learning", and the AI channel count. See <a href="../products/reading-a-spec-sheet.html">Reading a spec sheet</a>.</li>
+</ul>
+<h3 id="5-install-and-set-up-ai">5. Install and set up AI<a class="headerlink" href="#5-install-and-set-up-ai" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Detection type</td>
+<td>Human/vehicle detection <strong>ON</strong>; plain motion detection <strong>OFF</strong> for alerts</td>
+</tr>
+<tr>
+<td>Intrusion zones</td>
+<td>Cover only the property; leave out trees, roads and neighbours</td>
+</tr>
+<tr>
+<td>Line-crossing</td>
+<td>Draw where people appear full body; set the direction (outside → inside)</td>
+</tr>
+<tr>
+<td>Loitering</td>
+<td>Set a time, e.g. 30–60 seconds outside the shop at night (adjust per site)</td>
+</tr>
+<tr>
+<td>Schedule</td>
+<td>Alerts only in closed hours (e.g. 10 pm – 7 am, as the customer wants)</td>
+</tr>
+<tr>
+<td>Sensitivity</td>
+<td>Start in the middle; tune during the 2 weeks</td>
+</tr>
+<tr>
+<td>Siren + light</td>
+<td>Only in closed hours, only on the riskiest cameras</td>
+</tr>
+<tr>
+<td>Recorder</td>
+<td>Correct date and time; latest firmware; hard disk recording</td>
+</tr>
+<tr>
+<td>Phone app</td>
+<td>Install on the owner's phone; alerts on; <strong>battery saver off for the app</strong></td>
+</tr>
+<tr>
+<td>Backup</td>
+<td>Save a copy of the settings</td>
+</tr>
+</tbody>
+</table>
+<p>Follow the <a href="camera-placement-for-ai.html">placement checklist</a> for any new or moved camera.</p>
+<h3 id="6-test-and-2-week-tuning">6. Test and 2-week tuning<a class="headerlink" href="#6-test-and-2-week-tuning" title="Permanent link">&para;</a></h3>
+<p><strong>On installation day</strong>, test every AI camera and log the result:</p>
+<ul>
+<li>[ ] Walk across each line: normal, slow, fast, crouching</li>
+<li>[ ] Walk into each zone from the far end</li>
+<li>[ ] Stand outside the shop longer than the loitering time</li>
+<li>[ ] Siren and light go off in closed hours</li>
+<li>[ ] Alert arrives on the owner's phone within seconds</li>
+<li>[ ] Repeat the key tests <strong>after dark</strong></li>
+</ul>
+<p><strong>For the next 2 weeks</strong>, check the alert log every few days:</p>
+<table>
+<thead>
+<tr>
+<th>What you see</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Too many false alarms</td>
+<td>Lower sensitivity a little; redraw the zone</td>
+</tr>
+<tr>
+<td>A real person missed</td>
+<td>Raise sensitivity a little; check distance and <abbr title="Infrared: invisible light used for night vision">IR</abbr> range</td>
+</tr>
+<tr>
+<td>Alerts in daytime</td>
+<td>Fix the schedule</td>
+</tr>
+<tr>
+<td>Owner says no alerts</td>
+<td>Check phone battery saver and app notifications first</td>
+</tr>
+</tbody>
+</table>
+<p>See <a href="../troubleshooting/ai-failures-and-fixes.html">Why AI fails, and how to fix it</a>.</p>
+<h3 id="7-handover-and-amc">7. Handover and <abbr title="Annual Maintenance Contract: a yearly service fee for maintenance and support">AMC</abbr><a class="headerlink" href="#7-handover-and-amc" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Show the owner: live view, a test alert, how to switch the siren on or off, how to play back an alert.</li>
+<li>Tell them one honest limit, e.g. "At night it works well up to about X m."</li>
+<li>Sign the <abbr title="Annual Maintenance Contract: a yearly service fee for maintenance and support">AMC</abbr>: regular lens cleaning, zone checks, firmware updates, phone app checks.</li>
+</ul>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<p>A godown has 8 old analog cameras and a 6-year-old <abbr title="Digital Video Recorder: records video from analog cameras">DVR</abbr>. The owner wants to stop night theft from the back wall.</p>
+<table>
+<thead>
+<tr>
+<th>Camera</th>
+<th>Survey finding</th>
+<th>Decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–5 (inside, office, counter)</td>
+<td>Good day and night</td>
+<td>Keep</td>
+</tr>
+<tr>
+<td>6 (main gate)</td>
+<td>Good, but high-risk</td>
+<td>AI camera with siren + light</td>
+</tr>
+<tr>
+<td>7 (back wall, 50 m)</td>
+<td>One wide camera; far end too small, outside <abbr title="Infrared: invisible light used for night vision">IR</abbr> range</td>
+<td>Replace with 2 AI cameras with siren + light, one at each end</td>
+</tr>
+<tr>
+<td>8 (side lane)</td>
+<td><abbr title="Infrared: invisible light used for night vision">IR</abbr> dead</td>
+<td>Replace with AI camera</td>
+</tr>
+<tr>
+<td><abbr title="Digital Video Recorder: records video from analog cameras">DVR</abbr></td>
+<td>Old, no AI</td>
+<td>Replace with AI <abbr title="A hybrid recorder for analog cameras and some IP cameras; many now include AI">XVR</abbr></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Result (Standard package):</strong> 1 AI <abbr title="A hybrid recorder for analog cameras and some IP cameras; many now include AI">XVR</abbr>, 4 new AI cameras, 5 old cameras kept, <abbr title="Annual Maintenance Contract: a yearly service fee for maintenance and support">AMC</abbr> included. Night alerts work along the whole back wall, and the siren scares intruders before they reach the goods.</p>
+<h2 id="common-mistakes">Common mistakes<a class="headerlink" href="#common-mistakes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Replacing every camera when a recorder upgrade would do. The customer says no to the price.</li>
+<li>Only upgrading the recorder when some cameras can't see at night. The AI then "fails" and we get blamed.</li>
+<li>Buying a recorder whose AI channels don't cover the cameras that need AI.</li>
+<li>Mixing brands and promising full AI without testing <abbr title="A common &quot;language&quot; that lets cameras and recorders from different brands work together">ONVIF</abbr> first.</li>
+<li>Siren on all day, or on every camera. The owner gets annoyed and switches it off.</li>
+<li>Skipping the night test.</li>
+<li>Not turning off battery saver on the owner's phone.</li>
+</ul>
+<h2 id="how-to-explain-it-to-a-customer">How to explain it to a customer<a class="headerlink" href="#how-to-explain-it-to-a-customer" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>"You don't need to throw away your cameras. We'll check each one, upgrade the recorder so they all get smart alerts, and put a camera with a siren and light at your weak spots, like the back wall. You'll get alerts only for real people, and thieves get scared off before they take anything."</p>
+</blockquote>
+<h2 id="related-pages">Related pages<a class="headerlink" href="#related-pages" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="adding-ai-to-existing-cameras.html">Adding AI to existing cameras</a></li>
+<li><a href="camera-placement-for-ai.html">Camera placement for AI</a></li>
+<li><a href="../features/intrusion-line-crossing-loitering.html">Intrusion, line-crossing and loitering</a></li>
+<li><a href="../fundamentals/where-ai-runs.html">Where the AI runs</a></li>
+<li><a href="../sales/pricing-packages-amc.html">Pricing, packages and <abbr title="Annual Maintenance Contract: a yearly service fee for maintenance and support">AMC</abbr></a></li>
+<li><a href="../troubleshooting/ai-failures-and-fixes.html">Why AI fails, and how to fix it</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "navigation.indexes", "navigation.top", "search.suggest", "search.highlight", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
